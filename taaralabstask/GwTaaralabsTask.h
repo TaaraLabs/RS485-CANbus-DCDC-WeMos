@@ -3,5 +3,17 @@
 #define ESP32_CAN_RX_PIN GPIO_NUM_19
 #define GWSERIAL_TX GPIO_NUM_17
 #define GWSERIAL_RX GPIO_NUM_16
-#define GWSERIAL_TYPE GWSERIAL_TYPE_BI
+#define GWSERIAL_TYPE GWSERIAL_TYPE_RX
+#define USBSerial Serial
+#endif
+
+#ifdef BOARD_LOLIN32C3MINI
+#define ESP32_CAN_TX_PIN 1
+#define ESP32_CAN_RX_PIN 0
+//#define GWSERIAL_TX 7
+//#define GWSERIAL_RX 6
+//#define GWSERIAL_TYPE GWSERIAL_TYPE_RX
+//#define ARDUINO_USB_MODE 1
+//#define ARDUINO_USB_CDC_ON_BOOT 0
+#define USBSerial Serial
 #endif
