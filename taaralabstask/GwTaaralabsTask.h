@@ -10,9 +10,11 @@
 #ifdef BOARD_LOLIN32C3MINI
 #define ESP32_CAN_TX_PIN 1
 #define ESP32_CAN_RX_PIN 0
-#define GWSERIAL_TX 7
-#define GWSERIAL_RX 6
-#define GWSERIAL_TYPE GWSERIAL_TYPE_RX
+#define GWSERIAL_RX 20
+#define GWSERIAL_TX 21
+#define GWSERIAL_TYPE GWSERIAL_TYPE_UNI
 #define ARDUINO_USB_CDC_ON_BOOT 1
-#define USBSerial Serial
+#define USBSerial Serial1
+#define Serial2 Serial1
+#define SPI3_HOST SPI1_HOST
 #endif
